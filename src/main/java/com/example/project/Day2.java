@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Day2{
     public static String[][] nameSort(String[] names) {
         if (names.equals(null) || names.length == 0) {
-            throw new IllegalArgumentException("The names array cannot be null or empty.");
+            throw new IllegalArgumentException("The names array cannot be null or empty");
         }
 
         // Lists to hold names for "Nice" and "Naughty"

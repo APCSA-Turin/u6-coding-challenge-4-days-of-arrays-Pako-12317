@@ -8,13 +8,14 @@ public class Day1{
 
         // Validate input
         if (name == null || name.isEmpty()) {
-            throw new IllegalArgumentException("Name cannot be null or empty.");
+            throw new IllegalArgumentException("Name cannot be null or empty");
         }
 
         // Generate a random elf name
-        Random random = new Random();
-        String randomElfName = elf_names[random.nextInt(4)];
+        Random rand = new Random();
+        String randomElfName = elf_names[rand.nextInt()];
+        String elfName = randomElfName + " " + name;
 
-        return "Your elf name is: " + randomElfName + " " + name;
+        return "Your elf name is: " + elfName;
     }
 }
